@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Intro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/js.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <button id="btn1" onclick="popup()">POPUP</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <button id="btn2" onclick="randomNum()">RandomNum(0-50)</button>
+      <p id="box1"></p>
+    </div>
+    <br>
+    <hr>
+    <br>                                                            
+    <div>
+        <button id="btn3" onclick="openLinkImdb()">Abrir IMDB</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <button id="btn4" onclick="changeStatus()">Change Status</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <button id="btn5" onclick="changeTitle()">Change Title</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <button id="btn6" onclick="restoDivisao()">Resto 25/3</button>
+      <p id="box2"></p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <input class="input" type="text" id="box3" value="Sem focus">
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <input class="input" type="text" id="box4" value=""></input>
+      <button id="btn7" onclick="CalculoNumero()"> Calcular</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+      <input class="input" type="text" id="box5" value=""></input>
+      <button id="btn8" onclick="VerParametro(box5.value)"> Mostrar</button>
+      <input class="input" type="text" id="box6" readonly></input>
+    </div>
+
+    <script>
+      document
+        .getElementById("btn2")
+        .addEventListener("click", randomNum);
+
+      document
+        .getElementById("btn6")
+        .addEventListener("click", restoDivisao);
+
+      document
+        .getElementById("box3")
+        .addEventListener("focus", changeFocus);
+
+        document
+        .getElementById("box3")
+        .addEventListener("focusout", changeFocus);
+
+        document
+        .getElementById("box4")
+        
+
+
+    </script>
+  </body>
+</html>
